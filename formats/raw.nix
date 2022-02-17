@@ -17,7 +17,7 @@
 
   system.build.raw = import "${toString modulesPath}/../lib/make-disk-image.nix" {
     inherit lib config pkgs;
-    diskSize = "auto";
+    diskSize = 8192;
     format = "raw";
   };
 
